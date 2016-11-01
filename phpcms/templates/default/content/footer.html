@@ -1,24 +1,85 @@
-<div class="footer">
-<p class="info">
-{pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC"}
-{loop $data $r}
-<a href="{$r[url]}" target="_blank">{$r[catname]}</a> |  
-{/loop}
-{/pc}
-<a href="{APP_PATH}index.php?m=link" target="_blank">友情链接</a>
-<br />
-Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>{get_pc_version(1)}</em> &copy; 2015 <img src="{IMG_PATH}copyright.gif"/>{tjcode()}{php echo runhook('glogal_footer')}
-</p>
+
+
+<!---footer--->
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-3 footer-grid wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+                <h4>About</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean nonummy hendrerit mauris. Praesent vestibulummolestie lacus.</p>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInLeft animated animated" data-wow-delay="0.4s">
+                <h4>Categories</h4>
+                <ul>
+                    <li>Beauty</li>
+                    <li>Diet & Fitness</li>
+                    <li>Lifestyle</li>
+                    <li>Help Desk</li>
+                    <li>Pregnancy</li>
+                    <li>Performance Metrics</li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInUpBig animated animated" data-wow-delay="0.4s">
+                <h4>Work</h4>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Platinum Support</li>
+                    <li>Gold Support</li>
+                    <li>Training</li>
+                    <li>Workshops</li>
+                    <li>Online Training</li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
+                <h4>Contact</h4>
+                <p>7801 Marmora Road</p>
+                <p>Glasgow, DO5 98GR.</p>
+                <p>Freephone: +1 800 558 8990</p>
+                <p>Telephone: +1 659 803 9035</p>
+                <p>FAX: + 1 314 889 9898</p>
+                <a href="mailto:example@mail.com"> example@mail.com</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
-<script type="text/javascript">
-$(function(){
-	$(".picbig").each(function(i){
-		var cur = $(this).find('.img-wrap').eq(0);
-		var w = cur.width();
-		var h = cur.height();
-	   $(this).find('.img-wrap img').LoadImage(true, w, h,'{IMG_PATH}msg_img/loading.gif');
-	});
-})
-</script>
+<!---footer--->
+<!--copy-->
+<div class="copy-section wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+    <div class="container">
+        <div class="social-icons">
+            <a href="#"><i class="icon"></i></a>
+            <a href="#"><i class="icon1"></i></a>
+            <a href="#"><i class="icon2"></i></a>
+            <a href="#"><i class="icon3"></i></a>
+        </div>
+        <p>&copy; 2016 Flat Gym . All rights reserved | Design by </p>
+    </div>
+</div>
+
+
+
+<!--<div class="footer">-->
+<!--<p class="info">-->
+<!--{pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC"}-->
+<!--{loop $data $r}-->
+<!--<a href="{$r[url]}" target="_blank">{$r[catname]}</a> |  -->
+<!--{/loop}-->
+<!--{/pc}-->
+<!--<a href="{APP_PATH}index.php?m=link" target="_blank">友情链接</a>-->
+<!--<br />-->
+<!--Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>{get_pc_version(1)}</em> &copy; 2015 <img src="{IMG_PATH}copyright.gif"/>{tjcode()}{php echo runhook('glogal_footer')}-->
+<!--</p>-->
+<!--</div>-->
+<!--<script type="text/javascript">-->
+<!--$(function(){-->
+	<!--$(".picbig").each(function(i){-->
+		<!--var cur = $(this).find('.img-wrap').eq(0);-->
+		<!--var w = cur.width();-->
+		<!--var h = cur.height();-->
+	   <!--$(this).find('.img-wrap img').LoadImage(true, w, h,'{IMG_PATH}msg_img/loading.gif');-->
+	<!--});-->
+<!--})-->
+<!--</script>-->
 </body>
 </html>
